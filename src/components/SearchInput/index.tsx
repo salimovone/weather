@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { baseURL } from "../../helper";
 
@@ -19,19 +19,6 @@ const SearchInput = ({reloadFunc}: Props) => {
       .then((res) => setSearchData(res.data)).catch(error=>console.log(error.message)
       )
   };
-
-  // const handleClick = (prop?: boolean): void => {
-  //   window.addEventListener("keypress", (event) => {
-  //     if (event.code === "Enter") {
-  //       // setInpVal("");
-  //       window.removeEventListener("keypress", () => {}, true);
-  //     }
-  //   });
-  //   if (prop) {
-  //     // setInpVal("");
-  //     window.removeEventListener("keypress", () => {}, true);
-  //   }
-  // };
 
   const handleClickCity = (cityURL:string):void => {
     setInpVal('')

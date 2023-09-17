@@ -1,6 +1,5 @@
 import { BsSunrise, BsSunset } from "react-icons/bs"; 
 import { BiWind } from "react-icons/bi"; 
-import React from "react";
 import { resData } from "../../interfaces";
 
 type Props = {

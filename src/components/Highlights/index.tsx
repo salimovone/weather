@@ -1,4 +1,3 @@
-import React from "react";
 import { resData } from "../../interfaces";
 
 type Props = {
@@ -22,7 +21,6 @@ const Highlights = ({data}: Props) => {
                 <ul>
                     <li><b>Namlik</b> - <span>{data.current.humidity} %</span></li>
                     <li><b>Kabi his qilinmoqda</b> - <span>{data.current.feelslike_c}°C</span></li>
-                    {/* <li><b>Yomg'ir ehtimoli</b> - <span>0%</span></li> */}
                 </ul>
             </div>
         </div>

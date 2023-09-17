@@ -1,6 +1,4 @@
 import { GoLocation } from "react-icons/go"; 
-import React from 'react'
-import img from '../../assets/weather_icon/day/116.png'
 import { resData } from "../../interfaces";
 
 type Props = {

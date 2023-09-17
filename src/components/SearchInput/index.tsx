@@ -53,7 +53,7 @@ const SearchInput = ({reloadFunc}: Props) => {
       </button>
       <div className="absolute z-50 w-full top-14 left-0 glass-bg p-5 pt-2 text-black" style={{display: !inpVal?'none':'block'}}>
         {searchData.map(e=>(
-          <div className="glass-bg p-2 px-4 mt-3 text-white" key={e.id} onClick={() => handleClickCity(e.url)}>{`${e.country}/${e.region.length>1&&e.region}`}</div>
+          <div className="glass-bg p-2 px-4 mt-3 text-white cursor-pointer" key={e.id} onClick={() => handleClickCity(e.url)}>{`${e.country}/${e.region.length>1&&e.region}`}</div>
         ))}
       </div>
     </div>

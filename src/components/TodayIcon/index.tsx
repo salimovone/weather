@@ -9,7 +9,7 @@ const TodayIcon = (props: Props) => {
   return (
     <div>
         <div className="flex justify-center">
-            <img src={props.data.current.condition.icon} alt={`${props.data.current.condition.text} icon`} className='w-40 mt-3' />
+            <img src={props.data.current.condition.icon.replace('64x64', '128x128')} alt={`${props.data.current.condition.text} icon`} className='w-40 mt-3' />
         </div>
         <div className="">
             <p className="flex items-center gap-2">
